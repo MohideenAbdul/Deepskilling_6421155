@@ -1,0 +1,20 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+public class SingletonPatternExample {
+   public SingletonPatternExample() {
+   }
+
+   public static void main(String[] var0) {
+      Logger var1 = Logger.getInstance();
+      Logger var2 = Logger.getInstance();
+      if (var1 == var2) {
+         System.out.println("Both logger1 and logger2 refer to the same Logger instance.");
+      } else {
+         System.out.println("logger1 and logger2 refer to different instances (should not happen).");
+      }
+
+      var1.log("This is the first log message.");
+      var2.log("This is the second log message.");
+      System.out.println("logger1 hash code: " + System.identityHashCode(var1));
+      System.out.println("logger2 hash code: " + System.identityHashCode(var2));
+   }
+}
