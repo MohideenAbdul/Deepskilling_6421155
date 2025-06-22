@@ -1,0 +1,6 @@
+Recursion is a programming technique where a method calls itself to solve smaller instances of a problem until it reaches a base case. This approach is especially useful for 
+problems that can be broken down into similar subproblems, such as calculating compound interest, traversing trees, or forecasting sequences. In financial forecasting, 
+recursion can simplify the logic for predicting future values based on past data, such as applying a growth rate repeatedly over several periods.
+
+For example, to predict the future value of an investment, you can use recursion to apply the growth rate to the value from the previous period, continuing this process for 
+as many periods as needed. This not only makes the code concise but also closely mirrors the mathematical definition of such problems.
