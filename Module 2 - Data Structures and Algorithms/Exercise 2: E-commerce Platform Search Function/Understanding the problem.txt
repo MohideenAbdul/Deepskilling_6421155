@@ -1,0 +1,18 @@
+When building a search function for an e-commerce platform, it’s crucial to ensure that users can find products quickly, even as the number of products grows. 
+This is where understanding asymptotic notation, especially Big O notation, becomes important.
+
+Big O notation is a way to describe how the running time or space requirements of an algorithm grow as the input size increases. It helps us compare different algorithms 
+and predict how they will perform as the dataset becomes larger. For example, an algorithm with a time complexity of O(n) means that if you double the number of products, 
+the time it takes to search will also double. An O(log n) algorithm, like binary search, grows much more slowly with input size, making it more efficient for large datasets.
+
+When analyzing search algorithms, we often talk about three scenarios:
+
+Best-case: The fastest possible outcome (e.g., the product is found immediately).
+
+Average-case: The expected time for a typical search.
+
+Worst-case: The slowest possible outcome (e.g., the product is last in the list or not present at all).
+
+Linear search checks each product one by one. Its worst-case time is O(n), meaning it may need to look at every product. Binary search, on the other hand, 
+works on sorted data and repeatedly divides the search space in half. Its worst-case time is O(log n), which is much faster for large arrays. Thus, using the right algorithm 
+and data structure is critical for a fast, scalable search experience on an e-commerce platform.
