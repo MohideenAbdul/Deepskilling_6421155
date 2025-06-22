@@ -1,0 +1,11 @@
+Searching for books efficiently is a core feature in any library management system. Two fundamental search algorithms are commonly used: linear search and binary search.
+
+Linear search works by checking each book one by one until it finds a match or reaches the end of the list. It does not require the list to be sorted 
+and is simple to implement, but it can be slow for large collections since it may need to examine every book. Its time complexity is O(n), where n is the number of books.
+
+Binary search is much faster for large datasets but requires the list to be sorted (e.g., by title). It works by repeatedly dividing the search interval in half: checking the 
+middle book, and then deciding whether to search the left or right half based on the comparison. This reduces the number of comparisons dramatically, 
+with a time complexity of O(log n). For example, searching through a million books could take up to a million steps with linear search, but only about 20 steps 
+with binary search.
+
+In summary, linear search is best for small or unsorted lists, while binary search is ideal for large, sorted collections.
