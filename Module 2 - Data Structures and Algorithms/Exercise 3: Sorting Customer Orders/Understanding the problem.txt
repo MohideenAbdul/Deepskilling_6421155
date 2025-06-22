@@ -1,0 +1,18 @@
+Sorting is a fundamental operation in computer science, especially in e-commerce platforms where prioritizing high-value customer orders can directly impact business outcomes. 
+There are several sorting algorithms, each with its own strengths and weaknesses:
+
+Bubble Sort is a simple algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. 
+It’s easy to understand but inefficient for large datasets, with a time complexity of O(n²).
+
+Insertion Sort builds the sorted list one item at a time, inserting each new element into its proper place. It’s efficient for small or nearly sorted datasets but still 
+O(n²) in the worst case.
+
+Quick Sort is a divide-and-conquer algorithm. It selects a ‘pivot’ element, partitions the array into two sub-arrays (those less than the pivot and those greater), 
+and recursively sorts the sub-arrays. Quick Sort is much faster on average, with an average time complexity of O(n log n).
+
+Merge Sort also uses divide-and-conquer, splitting the array in half, sorting each half, and merging them back together. It guarantees O(n log n) performance but uses more 
+memory for the merging process.
+
+For sorting customer orders by total price, efficiency is key, especially as the number of orders grows. While Bubble Sort can be used for demonstration or very small lists, 
+Quick Sort is generally preferred in real-world scenarios due to its speed and efficiency.
+
