@@ -1,0 +1,10 @@
+A linked list is a dynamic data structure where each element (called a node) contains data and a reference (link) to the next node in the sequence. 
+There are different types of linked lists:
+
+Singly Linked List: Each node points only to the next node. It is simple and efficient for forward traversal and is commonly used for basic dynamic lists.
+
+Doubly Linked List: Each node has references to both the next and previous nodes, allowing traversal in both directions. This makes insertions and deletions more flexible but 
+uses more memory.
+
+For a task management system, a singly linked list is a good choice because it allows efficient addition and deletion of tasks without shifting elements, 
+as would be necessary in an array. Each task can be represented as a node, and the list can grow or shrink as needed, making it ideal for managing tasks dynamically.
