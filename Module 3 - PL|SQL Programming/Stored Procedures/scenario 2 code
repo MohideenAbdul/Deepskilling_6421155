@@ -1,0 +1,28 @@
+CREATE TABLE employees (
+    employee_id NUMBER PRIMARY KEY,
+    name VARCHAR2(100),
+    salary NUMBER,
+    department_id NUMBER
+);
+
+INSERT INTO employees VALUES (1, 'Mohideen', 30000, 10);
+INSERT INTO employees VALUES (2, 'Abdul', 35000, 10);
+INSERT INTO employees VALUES (3, 'Aziz', 40000, 20);
+
+CREATE OR REPLACE PROCEDURE UpdateEmployeeBonus (
+    p_department_id IN NUMBER,
+    p_bonus_percent IN NUMBER
+) AS
+    v_count NUMBER;
+BEGIN
+    UPDATE employees
+    SET salary = salary + (salary * p_bonus_percent / 100)
+    WHERE department_id = p_department_id;
+    v_count := SQL%ROWCOUNT;
+    DBMS_OUTPUT.PUT_LINE('Bonus applied to ' || v_count || ' employee(s) in department ' || p_department_id);
+    COMMIT;
+END;
+/
+
+SET SERVEROUTPUT ON;
+EXEC UpdateEmployeeBonus(10, 10);
